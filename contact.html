@@ -1,201 +1,71 @@
-font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth; 
-}
-
-
-header {
-    background-color: #f0f0f0;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 200px ;
-}
-
-.logo{
-    text-decoration: none;
-    color: #3a6cf4;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
-}
-
-.navigation a{
-    color: #3a6cf4;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding-left: 30px;
-}
-
-.navigation a:hover{
-    color: #601cfc;
-}
-
-/*=========================================================================*/
-
-section {
-    padding: 100px 200px;
-}
-
-/*=========================================================================*/
-
-
-
-/* ==============fourth section=== contact 
-======================================*/
-.title {
-    display: flex;
-    justify-content: center;
-    color: #3a6cf4;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #fff;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
-    transition: 0.7s ease;
-}
-
-.card:hover {
-    transform: scale(1.1);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-contact.css">
+    <link rel="icon" href="icons/myicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-}
+    <title>abdullah Albunoodha</title>
+</head>
+<body>
 
-.card .icon {
-    color: #3a6cf4;
-    font-size: 8em;
-    text-align: center;
-}
-
-.card .icon i:hover{
-     color: #14f827;
-}
-
-.info {
-    text-align: center;
-}
-
-.info h3{
-    color: #3a6cf4;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
-}
+ <!-- the header -->
 
 
-.contact .icon{
-    font-size: 4.5em;
-    transition: 0.4s;
-}
+    <header>
+        <a href="#" class="logo">Albunoodha</a>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+<!-- the fourth section=== contact == -->
+<section class="cards contact" id="contact">
+    <h2 class="title">the contact page</h2>
+    <div class="content">
+        <div class="card">
+            <div class="icon">
+                <a href="tel:0097336336856"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="info">
+                <h3>Phone</h3>
+                <p>+9732222222</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <a href="mailto:elshazlye@gmail.com"><i class="fas fa-envelope" ></i> </a>
+            </div>
+            <div class="info" >
+                <h3>Email</h3>
+                <p>business@Albunoodha</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- the last section=== footer == -->
+<footer class="footer">
+    <p class="footer-title">Copyrights @ <span>Albunoodha</span></p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/" target=""></a>
+    </div>
+</footer>
 
 
-
-
-.contact .info h3 {
-    color: #000;
-}
-
-.contact .info p {
-    font-size: 1.5em;
-}
-
-
-/* ============the last section=== footer
-====================== */
-.footer {
-    background-color: #000016;
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-title {
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
-.footer-title span {
-    color: #3a6cf4;
-}
-
-.footer .social-icons a{
-    font-size: 1.3em;
-    padding: 0 12px 0 0;
-}
-
-/*=========================================================================*/
-
-@media (max-width:1023px){
-    header{
-        padding: 12px 20px;
-    }
-
-    .navigation a{
-        padding-left: 10px;
-    }
-
-    .title{
-        font-size: 1.8em;
-    }
-
-    section{
-        padding: 80px 20px;
-    }
-
-    .main-content h2{
-        font-size: 1em;
-    }
-
-    .main-content h3{
-        font-size: 1.6em;
-    }
-
-    .content{
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
-/*=========================================================================*/
-
-@media (max-width:641px){
-    body{
-        font-size: 12px;
-    }
-
-    .main-content h2{
-        font-size: 0.8em;
-    }
-
-    .main-content h3{
-        font-size: 1.4em;
-    }
-}
-
-@media (max-width:300px){
-    body{
-        font-size: 10px;
-     
-    }
-}
+    
+</body>
+</html>
